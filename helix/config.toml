@@ -7,9 +7,9 @@ auto-format = false
 completion-timeout = 5
 completion-trigger-len = 1
 completion-replace = true
-bufferline = "multiple" # "always", "never" or "multiple"
+bufferline = "always" # "always", "never" or "multiple"
 default-line-ending = "lf"
-popup-border = "none"
+popup-border = "all" # "popup", "menu", "all" or "none"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -20,23 +20,23 @@ select = "underline"
 left = ["spinner", "mode", "separator", "version-control"]
 center = ["file-absolute-path", "read-only-indicator", "file-modification-indicator"]
 right = ["diagnostics", "register", "file-type", "selections", "position", "position-percentage", "file-encoding", "file-line-ending"]
-separator = "│"
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+separator = "▏"
+mode.normal = "[N]"
+mode.insert = "[I]"
+mode.select = "[S]"
 
 [editor.whitespace.render]
-tab = "all"
 nbsp = "all"
 nnbsp = "all"
+# tab = "all"
 
 [editor.whitespace.characters]
 nbsp = "⍽"
 nnbsp = "␣"
-tab = "→"
+# tab = "→"
 # tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 
 [editor.indent-guides]
 render = true
-character = "┆" # Some characters that work well: "▏", "╎", "┆", "┊", "⸽"
-skip-levels = 1
+character = "▏" # Some characters that work well: "▏", "╎", "┆", "┊", "⸽"
+skip-levels = 0
