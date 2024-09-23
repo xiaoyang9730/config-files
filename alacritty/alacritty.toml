@@ -1,0 +1,36 @@
+shell = { program = "pwsh", args = ["-wd", "~"] }
+
+[window]
+startup_mode = "Maximized"
+decorations_theme_variant = "Dark"
+
+[font]
+normal = { family = "JetBrains Mono NL", style = "ExtraLight" }
+size = 15
+
+[keyboard]
+bindings = [
+  { key = "F11", action = "ToggleFullscreen" },
+]
+
+[colors]
+primary.background = "#1E1E1E"
+primary.foreground = "#D4D4D4"
+cursor.text        = "#1d1f21"
+cursor.cursor      = "#cccccc"
+normal.black       = "#000000"
+normal.red         = "#cd3131"
+normal.green       = "#0dbc79"
+normal.yellow      = "#e5e510"
+normal.blue        = "#2472c8"
+normal.magenta     = "#bc3fbc"
+normal.cyan        = "#11a8cd"
+normal.white       = "#e5e5e5"
+bright.black       = "#666666"
+bright.red         = "#f14c4c"
+bright.green       = "#23d18b"
+bright.yellow      = "#f5f543"
+bright.blue        = "#3b8eea"
+bright.magenta     = "#d670d6"
+bright.cyan        = "#29b8db"
+bright.white       = "#e5e5e5"
