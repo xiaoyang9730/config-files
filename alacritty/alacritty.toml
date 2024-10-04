@@ -1,8 +1,10 @@
 shell = { program = "pwsh", args = ["-wd", "~"] }
 
 [window]
-startup_mode = "Maximized"
+dimensions = { columns = 108, lines = 28 }
 decorations_theme_variant = "Dark"
+title = "Alacritty"
+dynamic_title = false
 
 [font]
 normal = { family = "JetBrains Mono NL", style = "ExtraLight" }

@@ -6,20 +6,28 @@ line-number = "relative"
 auto-format = false
 completion-timeout = 5
 completion-trigger-len = 1
-completion-replace = true
 bufferline = "always" # "always", "never" or "multiple"
 default-line-ending = "lf"
 popup-border = "all" # "popup", "menu", "all" or "none"
+rulers = [101]
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "╎", "┆", "┊", "⸽"
+skip-levels = 0
+
+[editor.lsp]
+display-messages = true
+
 [editor.statusline]
-left = ["spinner", "mode", "separator", "version-control"]
-center = ["file-absolute-path", "read-only-indicator", "file-modification-indicator"]
-right = ["diagnostics", "register", "file-type", "selections", "position", "position-percentage", "file-encoding", "file-line-ending"]
+left = ["spinner", "mode", "separator", "version-control", "spacer", "diagnostics"]
+center = ["file-name", "read-only-indicator", "file-modification-indicator"]
+right = ["register", "file-type", "selections", "position", "position-percentage", "file-encoding", "file-line-ending"]
 separator = "▏"
 mode.normal = "[N]"
 mode.insert = "[I]"
@@ -35,8 +43,3 @@ nbsp = "⍽"
 nnbsp = "␣"
 # tab = "→"
 # tabpad = "·" # Tabs will look like "→···" (depending on tab width)
-
-[editor.indent-guides]
-render = true
-character = "▏" # Some characters that work well: "▏", "╎", "┆", "┊", "⸽"
-skip-levels = 0
