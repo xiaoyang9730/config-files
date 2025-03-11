@@ -1,0 +1,18 @@
+inherits = "dark_plus"
+
+"ui.selection.primary"       = { bg = "dark_blue2"  }
+"ui.virtual.indent-guide"    = { fg = "dark_gray3" }
+"ui.virtual.ruler"           = { bg = "darker_gray" }
+
+"ui.bufferline"              = { fg = "dark_gray", bg = "dark_gray3" }
+"ui.bufferline.active"       = { fg = "white", bg = "dark_blue" }
+"ui.cursor"                  = { fg = "darker_gray", bg = "cursor" }
+"ui.cursor.primary"          = { fg = "darker_gray", bg = "cursor" }
+"ui.cursorline.primary"      = { bg = "darker_gray" }
+"ui.statusline"              = { fg = "white", bg = "dark_gray3" }
+"ui.statusline.normal"       = { fg = "white", bg = "dark_gray4" }
+"ui.statusline.insert"       = { fg = "white", bg = "dark_blue" }
+"ui.statusline.select"       = { fg = "white", bg = "dark_gray5" }
+
+[palette]
+darker_gray = "#191919"

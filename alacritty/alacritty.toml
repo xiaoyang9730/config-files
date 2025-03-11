@@ -1,39 +1,87 @@
+[general]
+import = [
+  "./themes/github_dark.toml"
+]
+
 [terminal]
 shell = { program = "pwsh", args = ["-wd", "~"] }
 
 [window]
-dimensions = { columns = 108, lines = 28 }
+dimensions = { columns = 106, lines = 28 }
 decorations_theme_variant = "Dark"
 title = "Alacritty"
 dynamic_title = false
+dynamic_padding = true
 
 [font]
-normal = { family = "JetBrains Mono NL", style = "ExtraLight" }
-size = 15
+normal = { family = "霞鹜文楷等宽", style = "Regular" }
+size = 16
+# normal = { family = "JetBrains Mono NL", style = "Light" }
+# size = 14
 
-[keyboard]
-bindings = [
-  { key = "F11", action = "ToggleFullscreen" },
-]
+# [colors]
+# # vscode dark plus
+# primary.background = "#1E1E1E"
+# primary.foreground = "#D4D4D4"
+# cursor.text        = "#1d1f21"
+# cursor.cursor      = "#cccccc"
+# normal.black       = "#000000"
+# normal.red         = "#cd3131"
+# normal.green       = "#0dbc79"
+# normal.yellow      = "#e5e510"
+# normal.blue        = "#2472c8"
+# normal.magenta     = "#bc3fbc"
+# normal.cyan        = "#11a8cd"
+# normal.white       = "#e5e5e5"
+# bright.black       = "#666666"
+# bright.red         = "#f14c4c"
+# bright.green       = "#23d18b"
+# bright.yellow      = "#f5f543"
+# bright.blue        = "#3b8eea"
+# bright.magenta     = "#d670d6"
+# bright.cyan        = "#29b8db"
+# bright.white       = "#e5e5e5"
 
-[colors]
-primary.background = "#1E1E1E"
-primary.foreground = "#D4D4D4"
-cursor.text        = "#1d1f21"
-cursor.cursor      = "#cccccc"
-normal.black       = "#000000"
-normal.red         = "#cd3131"
-normal.green       = "#0dbc79"
-normal.yellow      = "#e5e510"
-normal.blue        = "#2472c8"
-normal.magenta     = "#bc3fbc"
-normal.cyan        = "#11a8cd"
-normal.white       = "#e5e5e5"
-bright.black       = "#666666"
-bright.red         = "#f14c4c"
-bright.green       = "#23d18b"
-bright.yellow      = "#f5f543"
-bright.blue        = "#3b8eea"
-bright.magenta     = "#d670d6"
-bright.cyan        = "#29b8db"
-bright.white       = "#e5e5e5"
+# # vscode dark+
+# primary.background = "#1E1E1E"
+# primary.foreground = "#CCCCCC"
+# cursor.text        = "#1E1E1E"
+# cursor.cursor      = "#CCCCCC"
+# normal.black       = "#6A787A"
+# normal.red         = "#E9653B"
+# normal.green       = "#39E9A8"
+# normal.yellow      = "#E5B684"
+# normal.blue        = "#44AAE6"
+# normal.magenta     = "#E17599"
+# normal.cyan        = "#3DD5E7"
+# normal.white       = "#C3DDE1"
+# bright.black       = "#598489"
+# bright.red         = "#E65029"
+# bright.green       = "#00FF9A"
+# bright.yellow      = "#E89440"
+# bright.blue        = "#009AFB"
+# bright.magenta     = "#FF578F"
+# bright.cyan        = "#5FFFFF"
+# bright.white       = "#D9FBFF"
+
+# # vscode light+
+# primary.background = "#F9F9F9"
+# primary.foreground = "#020202"
+# cursor.text        = "#F9F9F9"
+# cursor.cursor      = "#020202"
+# normal.black       = "#020202"
+# normal.red         = "#CD3232"
+# normal.green       = "#00BC00"
+# normal.yellow      = "#A5A900"
+# normal.blue        = "#0752A8"
+# normal.magenta     = "#BC05BC"
+# normal.cyan        = "#0598BC"
+# normal.white       = "#343434"
+# bright.black       = "#5E5E5E"
+# bright.red         = "#CD3333"
+# bright.green       = "#1BCE1A"
+# bright.yellow      = "#ADBB5B"
+# bright.blue        = "#0752A8"
+# bright.magenta     = "#C451CE"
+# bright.cyan        = "#52A8C7"
+# bright.white       = "#A6A3A6"

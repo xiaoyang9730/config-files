@@ -1,11 +1,15 @@
-theme = "dark_plus"
+# theme = "dark_plus"
+theme = "gruber-darker"
+# theme = "github_light"
 
 [editor]
 cursorline = true
 line-number = "relative"
 auto-format = false
+# path-completion = false
 completion-timeout = 5
 completion-trigger-len = 1
+completion-replace = false
 bufferline = "always" # "always", "never" or "multiple"
 default-line-ending = "lf"
 popup-border = "all" # "popup", "menu", "all" or "none"
@@ -15,6 +19,9 @@ rulers = [101]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.gutters]
+layout = ["diff", "line-numbers", "spacer"]
 
 [editor.indent-guides]
 render = true
@@ -31,7 +38,7 @@ right = ["register", "file-type", "selections", "position", "position-percentage
 separator = "▏"
 mode.normal = "[N]"
 mode.insert = "[I]"
-mode.select = "[S]"
+mode.select = "[V]"
 
 [editor.whitespace.render]
 nbsp = "all"
@@ -43,3 +50,6 @@ nbsp = "⍽"
 nnbsp = "␣"
 # tab = "→"
 # tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
